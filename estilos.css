@@ -1,0 +1,134 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+color:white;
+text-align:center;
+}
+
+/* VIDEO FUNDO */
+
+#bg-video{
+position:fixed;
+right:0;
+bottom:0;
+min-width:100%;
+min-height:100%;
+z-index:-1;
+}
+
+/* PERFIL */
+
+.perfil{
+padding-top:80px;
+}
+
+.foto-perfil{
+width:150px;
+height:150px;
+margin:auto;
+border-radius:50%;
+padding:5px;
+background:linear-gradient(yellow,green);
+}
+
+.foto-perfil img{
+width:100%;
+border-radius:50%;
+}
+
+/* NOME */
+
+.nome{
+font-size:30px;
+margin-top:10px;
+position:relative;
+}
+
+/* TARJA ABAIXO DO NE */
+
+.nome::before{
+content:"";
+width:30px;
+height:5px;
+background:yellow;
+position:absolute;
+bottom:-5px;
+left:50%;
+transform:translateX(-50%);
+}
+
+/* VERIFICADO */
+
+.nome::after{
+content:"✔";
+color:#00aaff;
+margin-left:8px;
+}
+
+/* LINKS */
+
+.links{
+margin-top:20px;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.links a{
+text-decoration:none;
+color:white;
+background:#222;
+padding:12px;
+width:250px;
+border-radius:10px;
+transition:0.3s;
+}
+
+/* HOVER */
+
+.links a:hover{
+background:#00ff88;
+transform:scale(1.05);
+color:black;
+}
+
+/* ESTATISTICAS */
+
+.estatisticas{
+margin-top:120px;
+padding:40px;
+background:rgba(0,0,0,0.7);
+}
+
+table{
+margin:auto;
+border-collapse:collapse;
+width:70%;
+}
+
+th,td{
+padding:10px;
+}
+
+/* LINHAS PARES E IMPARES */
+
+tr:nth-child(even){
+background:white;
+color:black;
+}
+
+tr:nth-child(odd){
+background:black;
+color:white;
+}
+
+th{
+background:gold;
+color:black;
+}
